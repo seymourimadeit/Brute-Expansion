@@ -18,9 +18,9 @@ displayName="Brute Expansion" #mandatory
 updateJSONURL="http://myurl.me/" #optional
 # A URL for the "homepage" for this mod, displayed in the mod UI
 #displayURL="http://example.com/" #optional
-credits="TallestEgg" #optional
+credits="TallestEgg, And McVinnyQ for making the buckler! " #optional
 # A text field displayed in the mod UI
-authors="TallestEgg" #optional
+authors="TallestEgg And McVinnyQ" #optional
 # The description text for the mod (multi line!) (#mandatory)
 description='''
 Expands Brutes!
