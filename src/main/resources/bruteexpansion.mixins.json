@@ -1,0 +1,13 @@
+{
+  "required": true,
+  "package": "tallestegg.bruteexpansion.mixin",
+  "compatibilityLevel": "JAVA_8",
+  "refmap": "bruteexpansion.refmap.json",
+  "mixins": [
+    "PiglinBruteMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  },
+  "minVersion": "0.8"
+}

@@ -23,7 +23,7 @@ public class BucklerRenderer extends ItemStackTileEntityRenderer {
         if (item == BEItems.BUCKLER.get()) {
             matrixStack.push();
             matrixStack.scale(1.0F, -1.0F, -1.0F);
-            RenderMaterial rendermaterial =  BucklerTexture.BUCKLER_TEXTURE;
+            RenderMaterial rendermaterial = BucklerTexture.BUCKLER_TEXTURE;
             IVertexBuilder ivertexbuilder = rendermaterial.getSprite().wrapBuffer(ItemRenderer.func_239391_c_(buffer, this.bucklerModel.getRenderType(rendermaterial.getAtlasLocation()), true, stack.hasEffect()));
             this.bucklerModel.base.render(matrixStack, ivertexbuilder, combinedLight, combinedOverlay, 1.0F, 1.0F, 1.0F, 1.0F);
             matrixStack.pop();
