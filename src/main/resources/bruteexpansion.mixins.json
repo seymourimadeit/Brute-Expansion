@@ -4,7 +4,9 @@
   "compatibilityLevel": "JAVA_8",
   "refmap": "bruteexpansion.refmap.json",
   "mixins": [
-    "PiglinBruteMixin"
+    "PiglinBruteMixin",
+    "BruteBrainMixin",
+    "PiglinModelMixin"
   ],
   "injectors": {
     "defaultRequire": 1
