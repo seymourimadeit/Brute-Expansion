@@ -18,6 +18,7 @@ public class BucklerRenderer extends ItemStackTileEntityRenderer {
 
     public final ModelGoldenBuckler bucklerModel = new ModelGoldenBuckler();
 
+    @Override
     public void func_239207_a_(ItemStack stack, ItemCameraTransforms.TransformType p_239207_2_, MatrixStack matrixStack, IRenderTypeBuffer buffer, int combinedLight, int combinedOverlay) {
         Item item = stack.getItem();
         if (item == BEItems.BUCKLER.get()) {

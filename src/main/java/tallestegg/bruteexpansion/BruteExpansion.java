@@ -46,6 +46,7 @@ public class BruteExpansion {
 
     @Mod.EventBusSubscriber(modid = MODID, bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
     public static class TextureHandler {
+        @SuppressWarnings("deprecation")
         @SubscribeEvent
         public static void onStitch(TextureStitchEvent.Pre event) {
             if (event.getMap().getTextureLocation().equals(AtlasTexture.LOCATION_BLOCKS_TEXTURE)) {

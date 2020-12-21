@@ -42,7 +42,6 @@ public class PiglinBruteMixin extends AbstractPiglinEntity implements IHasShield
     @Inject(at = @At("HEAD"), method = { "onInitialSpawn(Lnet/minecraft/world/IServerWorld;Lnet/minecraft/world/DifficultyInstance;Lnet/minecraft/entity/SpawnReason;Lnet/minecraft/entity/ILivingEntityData;Lnet/minecraft/nbt/CompoundNBT;)Lnet/minecraft/entity/ILivingEntityData;" })
     public ILivingEntityData onInitialSpawn(IServerWorld worldIn, DifficultyInstance difficultyIn, SpawnReason reason, @Nullable ILivingEntityData spawnDataIn, @Nullable CompoundNBT dataTag, CallbackInfoReturnable<ILivingEntityData> info) {
         this.setItemStackToSlot(EquipmentSlotType.OFFHAND, new ItemStack(BEItems.BUCKLER.get()));
-        this.bucklerCoolDown = 240;
         return super.onInitialSpawn(worldIn, difficultyIn, reason, spawnDataIn, dataTag);
     }
 
@@ -67,5 +66,10 @@ public class PiglinBruteMixin extends AbstractPiglinEntity implements IHasShield
     @Override
     public boolean isCharging() {
         return this.isCharging;
+    }
+
+    @Override
+    public void setShieldCoolDown(int i) {
+        bucklerCoolDown = i;
     }
 }
